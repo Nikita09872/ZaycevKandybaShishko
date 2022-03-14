@@ -1,0 +1,54 @@
+concept_krichevcement_slate
+<- sc_node_not_relation; 
+<-concept_power_stations;
+=> nrel_main_idtf: 
+[Кричевцементошифер]
+(* <- lang_ru;; *); 
+[Krichevcement slate]
+(* <- lang_en;; *); 
+<-rrel_key_sc_element:...
+(*
+<-definition;;
+=>nrel_main_idtf:
+[Описание (Кричевцементошифер)](*<-lang_ru;;*);
+[Description (Krichevcement slate)](*<-lang_en;;*);; 
+<=nrel_using_constants: 
+{
+concept_power_stations
+};;
+<=nrel_sc_text_translation:... 
+(* 
+->rrel_example: "file://HTML/krichevcement_slate_def_ru.html"(*<-lang_ru;;=>nrel_format:format_html;;*);;
+->rrel_example: "file://HTML/krichevcement_slate_def_en.html"(*<-lang_en;;=>nrel_format:format_html;;*);;
+*);; 
+*); 
+=>nrel_industry: ...(* 
+<- concept_quantity;;
+<= nrel_relevance: ...
+(* 
+-> rrel_industry:  Промышленность строительных материалов 
+(* 
+<- concept_number;; 
+*);; 
+*);; 
+*); 
+=>nrel_address: ...(* 
+<- concept_quantity;;
+<= nrel_relevance: ...
+(* 
+-> rrel_address:  Могилевская область, Кричевский район, Краснобудский с/с, 2, АБК в районе месторождения "Каменка" 
+(* 
+<- concept_number;; 
+*);; 
+*);; 
+*); 
+=>nrel_creation_year: ...(* 
+<- concept_quantity;; 
+<= nrel_relevance: ... 
+(* 
+-> rrel_year: 1933
+(* 
+<- concept_number;; 
+*);; 
+*);; 
+*);; 

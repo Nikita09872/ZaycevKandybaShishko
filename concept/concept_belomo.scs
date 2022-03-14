@@ -1,0 +1,64 @@
+concept_belomo
+<- sc_node_not_relation; 
+<-concept_power_stations;
+=> nrel_main_idtf: 
+[БелОМО]
+(* <- lang_ru;; *); 
+[BelOMO]
+(* <- lang_en;; *); 
+<-rrel_key_sc_element:...
+(*
+<-definition;;
+=>nrel_main_idtf:
+[Описание (БелОМО)](*<-lang_ru;;*);
+[Description (BelOMO)](*<-lang_en;;*);; 
+<=nrel_using_constants: 
+{
+concept_power_stations
+};;
+<=nrel_sc_text_translation:... 
+(* 
+->rrel_example: "file://HTML/belomo_def_ru.html"(*<-lang_ru;;=>nrel_format:format_html;;*);;
+->rrel_example: "file://HTML/belomo_def_en.html"(*<-lang_en;;=>nrel_format:format_html;;*);;
+*);; 
+*); 
+=>nrel_industry: ...(* 
+<- concept_quantity;;
+<= nrel_relevance: ...
+(* 
+-> rrel_industry:  Машиностроение
+(* 
+<- concept_number;; 
+*);; 
+*);; 
+*); 
+=>nrel_number_of_person: ...(* 
+<- concept_quantity;; 
+<= nrel_relevance: ... 
+(* 
+-> rrel_persons: 2597
+(* 
+<- concept_number;; 
+*);; 
+*);; 
+*); 
+=>nrel_address: ...(* 
+<- concept_quantity;;
+<= nrel_relevance: ...
+(* 
+-> rrel_address:  ул. Макаёнка 23, Минск 
+(* 
+<- concept_number;; 
+*);; 
+*);; 
+*); 
+=>nrel_creation_year: ...(* 
+<- concept_quantity;; 
+<= nrel_relevance: ... 
+(* 
+-> rrel_year: 1957
+(* 
+<- concept_number;; 
+*);; 
+*);; 
+*);; 

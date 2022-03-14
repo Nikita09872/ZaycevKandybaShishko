@@ -1,0 +1,64 @@
+concept_krasnoselskstroymaterialy
+<- sc_node_not_relation; 
+<-concept_power_stations;
+=> nrel_main_idtf: 
+[Красносельскстройматериалы]
+(* <- lang_ru;; *); 
+[Krasnoselskstroymaterialy]
+(* <- lang_en;; *); 
+<-rrel_key_sc_element:...
+(*
+<-definition;;
+=>nrel_main_idtf:
+[Описание (Красносельскстройматериалы)](*<-lang_ru;;*);
+[Description (Krasnoselskstroymaterialy)](*<-lang_en;;*);; 
+<=nrel_using_constants: 
+{
+concept_power_stations
+};;
+<=nrel_sc_text_translation:... 
+(* 
+->rrel_example: "file://HTML/krasnoselskstroymaterialy_def_ru.html"(*<-lang_ru;;=>nrel_format:format_html;;*);;
+->rrel_example: "file://HTML/krasnoselskstroymaterialy_def_en.html"(*<-lang_en;;=>nrel_format:format_html;;*);;
+*);; 
+*); 
+=>nrel_industry: ...(* 
+<- concept_quantity;;
+<= nrel_relevance: ...
+(* 
+-> rrel_industry:  Промышленность строительных материалов 
+(* 
+<- concept_number;; 
+*);; 
+*);; 
+*); 
+=>nrel_number_of_person: ...(* 
+<- concept_quantity;; 
+<= nrel_relevance: ... 
+(* 
+-> rrel_persons: 2689
+(* 
+<- concept_number;; 
+*);; 
+*);; 
+*); 
+=>nrel_address: ...(* 
+<- concept_quantity;;
+<= nrel_relevance: ...
+(* 
+-> rrel_address:  Гродненская обл., Волковысский р-он г.п. Красносельский, ул. Победы, 5 
+(* 
+<- concept_number;; 
+*);; 
+*);; 
+*); 
+=>nrel_creation_year: ...(* 
+<- concept_quantity;; 
+<= nrel_relevance: ... 
+(* 
+-> rrel_year: 1914
+(* 
+<- concept_number;; 
+*);; 
+*);; 
+*);; 

@@ -1,0 +1,54 @@
+concept_brest_electromechanical_plant
+<- sc_node_not_relation; 
+<-concept_power_stations;
+=> nrel_main_idtf: 
+[Брестский электромеханический завод]
+(* <- lang_ru;; *); 
+[Brest Electromechanical Plant]
+(* <- lang_en;; *); 
+<-rrel_key_sc_element:...
+(*
+<-definition;;
+=>nrel_main_idtf:
+[Описание (Брестский электромеханический завод)](*<-lang_ru;;*);
+[Description (Brest Electromechanical Plant)](*<-lang_en;;*);; 
+<=nrel_using_constants: 
+{
+concept_power_stations
+};;
+<=nrel_sc_text_translation:... 
+(* 
+->rrel_example: "file://HTML/brest_electromechanical_plant_def_ru.html"(*<-lang_ru;;=>nrel_format:format_html;;*);;
+->rrel_example: "file://HTML/brest_electromechanical_plant_def_en.html"(*<-lang_en;;=>nrel_format:format_html;;*);;
+*);; 
+*); 
+=>nrel_industry: ...(* 
+<- concept_quantity;;
+<= nrel_relevance: ...
+(* 
+-> rrel_industry:  Транспортное машиностроение
+(* 
+<- concept_number;; 
+*);; 
+*);; 
+*); 
+=>nrel_address: ...(* 
+<- concept_quantity;;
+<= nrel_relevance: ...
+(* 
+-> rrel_address:  г.Брест ул.Строительная, 56 
+(* 
+<- concept_number;; 
+*);; 
+*);; 
+*); 
+=>nrel_creation_year: ...(* 
+<- concept_quantity;; 
+<= nrel_relevance: ... 
+(* 
+-> rrel_year: 1963
+(* 
+<- concept_number;; 
+*);; 
+*);; 
+*);; 
