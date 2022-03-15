@@ -1,1 +1,1 @@
-# ZaycevKandybaShishko
+# ZaycevKandyba concept
